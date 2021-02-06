@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to right, #55439E, #952fff);
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    position: relative; /* para setar as positions dos elementos na main*/
+    background-image: url('./images/Group12.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* cover para ter o total size do container*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#image-left-bottom {
+    width: 284px;
+    height: auto;
+    position: absolute;
+    left: 20px;
+    bottom: 65px;
+    top: 60%;
+}
+
+#image-left-top {
+    width: 290.25px;
+    height: 297.16px;
+    position: absolute;
+    top: -100px;
+    left: -30px;
+}
+
+#image-right {
+    width: 440px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 30px
+}
+
+.info {
+    width: 100%;
+    max-width: 1117px;
+    z-index: 9; /* para trazer o card para frente dos outros elementos*/
+    display: flex;
+    justify-content: space-between;
+    left: 162px;
+    top: 248px;
+}
+
+.info-title {
+    width: 480px
+}
+
+.info-title h1 {
+    width: 431px;
+    height: auto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: #ffffff;
+    left: 162px;
+    top: 248px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.info-title p {
+    width: 383px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.info-submit {
+    width: 100%;
+    position: relative;
+}
+
+.info-submit input {
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 20px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    border:1px solid rgba(255, 255, 255, 0.7);
+    /* GLASS EFFECT*/
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(45px);
+}
+.info-submit input::placeholder {
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height:16px;
+    color: #CDBFD8;
+    ;
+    padding-left: 20px;
+}
+
+.info-submit button {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    width: 120px;
+    height: 60px;
+    background-color: #4f3aa7;
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height:16px;
+    color: white ;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.info-card .card {
+    width: 500px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(45px);
+    border-radius: 20px;
+    position: relative;
+    padding: 40px 50px;
+    box-sizing: border-box;
+    top: 50px;
+}
+
+/* lembrando que o CSS nao aceita linear grade por isso vamos fazer esse codigo agora*/
+.info-card .card::before {
+    content: '';
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-right: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 20px 0 0 20px;
+}
+
+.info-card .card::after {
+    content: '';
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-left: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius:  0 20px 20px 0;
+}
+
+.card-title h2 {
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-style: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 46px;
+}
+
+.card-chip img {
+    width: 60px;
+    height: 43px;
+    margin-bottom: 45px;
+}
+
+.card img#master-logo {
+    position: absolute;
+    display: flex;
+    right: 15px;
+    top: 25px;
+    width: 100px;
+    height: auto;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-footer div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.card-footer .card-footer-info p {
+    margin: 0;/* 
+    font-size: 20px;
+    line-height:30px; */
+}
+.card-footer .card-footer-info p {
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.card-footer .card-footer-info p:first-child {
+    margin-bottom: 8px;
+}
+
+.footer-text {
+    font-family: Lato, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.footer-text--big{
+    letter-spacing: 0.07em;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.footer-text-data {
+    margin-bottom: 0;
+}
+
+footer p {
+    font-family: Lato, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
