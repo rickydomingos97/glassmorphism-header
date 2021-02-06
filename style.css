@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -271,4 +276,84 @@ footer p {
     text-align: center;
     color: #ffffff;
     padding-bottom: 20px;
+}
+
+/* MOBILE VERSION */
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+    }
+    .container {
+        width: auto;
+        margin: 1px 0 10px;
+    }
+
+    #image-left-top {
+        width: auto;
+        height: 30%;
+        position: absolute;
+        top: -110px;
+        left: -60px;
+    }
+
+    #image-left-bottom {
+        width: 284px;
+        height: auto;
+        position: absolute;
+        left: -70px;
+        bottom: 65px;
+        top: 80%;
+    }
+
+    #image-right {
+        width: 300px;
+        height: auto;
+        position: absolute;
+        right: 0;
+        top: 160px
+    }
+
+    .info {
+        display: block;
+    }
+
+    .info-title h1 {
+        margin: 10px;
+    }
+
+    .info-title p {
+        margin: 10px;
+        max-width: 300px;
+        margin-bottom: 10%;
+    }
+
+    .info-submit input {
+        display: block;
+        max-width: 100%;
+        width: 300px;
+        margin-left: 5%;
+        
+    }
+
+    .info-submit button {
+        display: block;
+        position: relative;
+        width: 330px;
+        margin-left: 5%;
+        padding: 0;
+    }
+
+    .info-card .card {
+        width: 100%;
+        height: auto;
+
+    }
+
+    footer {
+        width: 290px;
+        align-items: center;
+        display: block;
+        margin: 200px auto;
+        bottom: 0;
+    }
 }
