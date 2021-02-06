@@ -111,7 +111,7 @@ body {
     backdrop-filter: blur(45px);
 }
 
-/* .info-submit input::placeholder {
+.info-submit input::placeholder {
     position: absolute;
     align-items: center;
     font-family: Lato, sans-serif;
@@ -120,9 +120,9 @@ body {
     line-height:16px;
     color: #CDBFD8;
 
-} */
+}
 
-::placeholder {
+/* ::placeholder {
     position: absolute;
     align-items: center;
     font-family: Lato, sans-serif;
@@ -130,7 +130,7 @@ body {
     font-weight: normal;
     line-height:16px;
     color: #CDBFD8;
-  }
+  } */
 
 .info-submit button {
     position: absolute;
